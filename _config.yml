@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Mojito～
+title: Mojitoming～
 subtitle: 「My mojito in La Bodeguita，My daiquiri in El Floridita」
 description: IT, java, Spring, full-stack, web, javascript...
 keywords:
 author: Mojitoming
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -74,7 +74,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -83,3 +83,8 @@ deploy:
   repo: git@github.com:mojitoming/mojitoming.github.io.git
   branch: master
   author: Mojitoming
+
+# Comment
+duoshuo:
+  enable: true
+  shortname: your-duoshuo-shortname
