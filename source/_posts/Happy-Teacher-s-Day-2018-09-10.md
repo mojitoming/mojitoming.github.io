@@ -2,6 +2,10 @@
 title: Happy Teacher's Day
 date: 2018-09-10 17:38:25
 tags:
+  - teacher's day
+  - 教师节
+  - 趣闻
+categories: 趣闻
 ---
 > From Wikipedia
 

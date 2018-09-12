@@ -1,7 +1,11 @@
 ---
 title: Emacs shortcut keys
 date: 2018-09-10 18:31:18
-tags:
+tags: 
+  - emacs
+  - shortcut
+  - 快捷键
+categories: skills
 ---
 > 基于自己常用的的快捷键，整理了这份list，不定期更新～
 ### ** 基本命令
