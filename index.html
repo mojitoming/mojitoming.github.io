@@ -385,11 +385,11 @@
       
         
           
-            <h2 id="1-busuanzi-出现问题，无法显示，乱行。"><a href="#1-busuanzi-出现问题，无法显示，乱行。" class="headerlink" title="1. busuanzi 出现问题，无法显示，乱行。"></a>1. busuanzi 出现问题，无法显示，乱行。</h2><p>   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：<br>   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig</p>
+            <h2 id="busuanzi-出现问题，无法显示，乱行。"><a href="#busuanzi-出现问题，无法显示，乱行。" class="headerlink" title="busuanzi 出现问题，无法显示，乱行。"></a>busuanzi 出现问题，无法显示，乱行。</h2><p>   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：<br>   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig</p>
 <p>   before:<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
 <p>   alter:<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
 <p>   官网地址：<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">busuanzi</a></p>
-<h2 id="2-busuanzi-footer-中文显示-？？？？-乱码处理"><a href="#2-busuanzi-footer-中文显示-？？？？-乱码处理" class="headerlink" title="2. busuanzi footer 中文显示 ？？？？ 乱码处理"></a>2. busuanzi footer 中文显示 ？？？？ 乱码处理</h2><p>   site_uv_header的值使用中文的话，可能会显示成？？？？这样乱码的样子，是由于nexT配置文件_config.yml的编码格式导致的，修改为UTF-8，然后重新修改这部分乱码部分。然后 hexo g -d 重新发布即可。</p>
+<h2 id="busuanzi-footer-中文显示-？？？？-乱码处理"><a href="#busuanzi-footer-中文显示-？？？？-乱码处理" class="headerlink" title="busuanzi footer 中文显示 ？？？？ 乱码处理"></a>busuanzi footer 中文显示 ？？？？ 乱码处理</h2><p>   site_uv_header的值使用中文的话，可能会显示成？？？？这样乱码的样子，是由于nexT配置文件_config.yml的编码格式导致的，修改为UTF-8，然后重新修改这部分乱码部分。然后 hexo g -d 重新发布即可。</p>
 
           
         

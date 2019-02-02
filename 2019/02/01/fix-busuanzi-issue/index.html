@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1. busuanzi 出现问题，无法显示，乱行。   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig    before:   1&amp;lt;script async src=&quot;https://dn-lbstatic">
+<meta name="description" content="busuanzi 出现问题，无法显示，乱行。   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig    before:   1&amp;lt;script async src=&quot;https://dn-lbstatics.q">
 <meta name="keywords" content="busuanzi,nexT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="不蒜子问题总结">
 <meta property="og:url" content="http://yoursite.com/2019/02/01/fix-busuanzi-issue/index.html">
 <meta property="og:site_name" content="Mojitoming～">
-<meta property="og:description" content="1. busuanzi 出现问题，无法显示，乱行。   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig    before:   1&amp;lt;script async src=&quot;https://dn-lbstatic">
+<meta property="og:description" content="busuanzi 出现问题，无法显示，乱行。   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig    before:   1&amp;lt;script async src=&quot;https://dn-lbstatics.q">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-01T09:29:42.653Z">
+<meta property="og:updated_time" content="2019-02-02T04:06:29.548Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="不蒜子问题总结">
-<meta name="twitter:description" content="1. busuanzi 出现问题，无法显示，乱行。   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig    before:   1&amp;lt;script async src=&quot;https://dn-lbstatic">
+<meta name="twitter:description" content="busuanzi 出现问题，无法显示，乱行。   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig    before:   1&amp;lt;script async src=&quot;https://dn-lbstatics.q">
 
 
 
@@ -382,11 +382,11 @@
       
 
       
-        <h2 id="1-busuanzi-出现问题，无法显示，乱行。"><a href="#1-busuanzi-出现问题，无法显示，乱行。" class="headerlink" title="1. busuanzi 出现问题，无法显示，乱行。"></a>1. busuanzi 出现问题，无法显示，乱行。</h2><p>   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：<br>   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig</p>
+        <h2 id="busuanzi-出现问题，无法显示，乱行。"><a href="#busuanzi-出现问题，无法显示，乱行。" class="headerlink" title="busuanzi 出现问题，无法显示，乱行。"></a>busuanzi 出现问题，无法显示，乱行。</h2><p>   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：<br>   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig</p>
 <p>   before:<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
 <p>   alter:<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
 <p>   官网地址：<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">busuanzi</a></p>
-<h2 id="2-busuanzi-footer-中文显示-？？？？-乱码处理"><a href="#2-busuanzi-footer-中文显示-？？？？-乱码处理" class="headerlink" title="2. busuanzi footer 中文显示 ？？？？ 乱码处理"></a>2. busuanzi footer 中文显示 ？？？？ 乱码处理</h2><p>   site_uv_header的值使用中文的话，可能会显示成？？？？这样乱码的样子，是由于nexT配置文件_config.yml的编码格式导致的，修改为UTF-8，然后重新修改这部分乱码部分。然后 hexo g -d 重新发布即可。</p>
+<h2 id="busuanzi-footer-中文显示-？？？？-乱码处理"><a href="#busuanzi-footer-中文显示-？？？？-乱码处理" class="headerlink" title="busuanzi footer 中文显示 ？？？？ 乱码处理"></a>busuanzi footer 中文显示 ？？？？ 乱码处理</h2><p>   site_uv_header的值使用中文的话，可能会显示成？？？？这样乱码的样子，是由于nexT配置文件_config.yml的编码格式导致的，修改为UTF-8，然后重新修改这部分乱码部分。然后 hexo g -d 重新发布即可。</p>
 
       
     </div>
@@ -586,7 +586,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-busuanzi-出现问题，无法显示，乱行。"><span class="nav-number">1.</span> <span class="nav-text">1. busuanzi 出现问题，无法显示，乱行。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-busuanzi-footer-中文显示-？？？？-乱码处理"><span class="nav-number">2.</span> <span class="nav-text">2. busuanzi footer 中文显示 ？？？？ 乱码处理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#busuanzi-出现问题，无法显示，乱行。"><span class="nav-number">1.</span> <span class="nav-text">busuanzi 出现问题，无法显示，乱行。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#busuanzi-footer-中文显示-？？？？-乱码处理"><span class="nav-number">2.</span> <span class="nav-text">busuanzi footer 中文显示 ？？？？ 乱码处理</span></a></li></ol></div>
             
 
           </div>
