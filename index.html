@@ -1,23 +1,593 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
 
-{% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
+  
+  <title>Mojitoming～</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="「My mojito in La Bodeguita，My daiquiri in El Floridita」">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mojitoming～">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Mojitoming～">
+<meta property="og:description" content="「My mojito in La Bodeguita，My daiquiri in El Floridita」">
+<meta property="og:locale">
+<meta property="article:author" content="Mojitoming">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Mojitoming～" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
-{% block page_class %}
-  {% if is_home() %}page-home{% endif -%}
-{% endblock %}
+<meta name="generator" content="Hexo 5.0.0"></head>
 
-{% block content %}
-  <section id="posts" class="posts-expand">
-    {% for post in page.posts %}
-      {{ post_template.render(post, true) }}
-    {% endfor %}
-  </section>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Mojitoming～</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-CSS-禁止选中文本" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/06/CSS-%E7%A6%81%E6%AD%A2%E9%80%89%E4%B8%AD%E6%96%87%E6%9C%AC/" class="article-date">
+  <time datetime="2020-08-06T03:43:46.000Z" itemprop="datePublished">2020-08-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/WEB/">WEB</a>
+  </div>
 
-  {% include '_partials/pagination.swig' %}
-{% endblock %}
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/06/CSS-%E7%A6%81%E6%AD%A2%E9%80%89%E4%B8%AD%E6%96%87%E6%9C%AC/">CSS 禁止选中文本</a>
+    </h1>
+  
 
-{% block sidebar %}
-  {{ sidebar_template.render(false) }}
-{% endblock %}
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">-moz-user-select</span>:none; <span class="comment">/*火狐*/</span></span><br><span class="line">    <span class="attribute">-webkit-user-select</span>:none; <span class="comment">/*webkit浏览器*/</span></span><br><span class="line">    <span class="attribute">-ms-user-select</span>:none; <span class="comment">/*IE10*/</span></span><br><span class="line">    <span class="attribute">-khtml-user-select</span>:none; <span class="comment">/*早期浏览器*/</span></span><br><span class="line">    <span class="attribute">user-select</span>:none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/08/06/CSS-%E7%A6%81%E6%AD%A2%E9%80%89%E4%B8%AD%E6%96%87%E6%9C%AC/" data-id="ckdif4l5a00038419hkemak4g" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Automated-Deployment-of-Projects-by-Jenkins" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/06/08/Automated-Deployment-of-Projects-by-Jenkins/" class="article-date">
+  <time datetime="2020-06-08T09:37:58.000Z" itemprop="datePublished">2020-06-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E9%A1%B9%E7%9B%AE%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/">项目自动化部署</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/08/Automated-Deployment-of-Projects-by-Jenkins/">基于 Jenkins 的自动化部署方案</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>本方案基于开源 CI&amp;CD 软件 Jenkins，完成对提交到 git 上的代码进行拉取、打包、发布的自动部署过程，便于系统开发中进行项目功能的测试及讨论。此方案重点在实施，故其中命令及参数使用不做详细解释，可自行搜索。</p>
+<p>不足之处，敬请指正。</p>
+</blockquote>
+<h2 id="系统要求"><a href="#系统要求" class="headerlink" title="系统要求"></a>系统要求</h2><p>最低推荐配置：</p>
+<ul>
+<li>256MB可用内存</li>
+<li>1GB可用磁盘空间(作为一个<a target="_blank" rel="noopener" href="https://www.jenkins.io/zh/doc/book/installing/#docker">Docker</a>容器运行jenkins的话推荐10GB)</li>
+</ul>
+<p>为小团队推荐的硬件配置:</p>
+<ul>
+<li>1GB+可用内存</li>
+<li>50 GB+ 可用磁盘空间</li>
+</ul>
+<p>软件配置:</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/06/08/Automated-Deployment-of-Projects-by-Jenkins/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/06/08/Automated-Deployment-of-Projects-by-Jenkins/" data-id="ckdif4l5700018419bsksdh19" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jenkins/" rel="tag">Jenkins</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-fix-busuanzi-issue" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/01/fix-busuanzi-issue/" class="article-date">
+  <time datetime="2019-02-01T08:56:02.000Z" itemprop="datePublished">2019-02-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/skills/">skills</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/01/fix-busuanzi-issue/">不蒜子问题总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="busuanzi-出现问题，无法显示，乱行。"><a href="#busuanzi-出现问题，无法显示，乱行。" class="headerlink" title="busuanzi 出现问题，无法显示，乱行。"></a>busuanzi 出现问题，无法显示，乱行。</h2><p>   busuanzi更换服务器域名了，所以要修改下nexT里面js引入的路径，需改的文件如下：<br>   xxx/themes/next/layout/_third-party/analytics/busuanzi-counter.swig</p>
+<p>   before:<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">&quot;https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><br>   alter:<br>   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">&quot;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>   官网地址：<a target="_blank" rel="noopener" href="http://ibruce.info/2015/04/04/busuanzi/">busuanzi</a></p>
+<h2 id="busuanzi-footer-中文显示-？？？？-乱码处理"><a href="#busuanzi-footer-中文显示-？？？？-乱码处理" class="headerlink" title="busuanzi footer 中文显示 ？？？？ 乱码处理"></a>busuanzi footer 中文显示 ？？？？ 乱码处理</h2><p>   site_uv_header的值使用中文的话，可能会显示成？？？？这样乱码的样子，是由于nexT配置文件_config.yml的编码格式导致的，修改为UTF-8，然后重新修改这部分乱码部分。然后 hexo g -d 重新发布即可。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/01/fix-busuanzi-issue/" data-id="ckdif4l5c00078419bp362bng" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/busuanzi/" rel="tag">busuanzi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nexT/" rel="tag">nexT</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Learn_elisp_in_Y_Minutes" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/17/Learn_elisp_in_Y_Minutes/" class="article-date">
+  <time datetime="2018-09-17T08:42:47.000Z" itemprop="datePublished">2018-09-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Emacs/">Emacs</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/17/Learn_elisp_in_Y_Minutes/">【转载】X分钟速成Y</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>转载这篇文章，真心觉得好，通俗易懂～<br>原文地址：<a target="_blank" rel="noopener" href="https://learnxinyminutes.com/docs/zh-cn/elisp-cn/">https://learnxinyminutes.com/docs/zh-cn/elisp-cn/</a></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">;; 15分钟学会Emacs Lisp (v0.2a)</span><br><span class="line">;;（作者：bzg，https:&#x2F;&#x2F;github.com&#x2F;bzg </span><br><span class="line">;;  译者：lichenbo，http:&#x2F;&#x2F;douban.com&#x2F;people&#x2F;lichenbo）</span><br><span class="line">;;</span><br><span class="line">;; 请先阅读Peter Norvig的一篇好文:</span><br><span class="line">;; http:&#x2F;&#x2F;norvig.com&#x2F;21-days.html</span><br><span class="line">;; （译者注：中文版请见http:&#x2F;&#x2F;blog.youxu.info&#x2F;21-days&#x2F;）</span><br><span class="line">;;</span><br><span class="line">;; 之后安装GNU Emacs 24.3:</span><br><span class="line">;;</span><br><span class="line">;; Debian: apt-get install emacs (视具体发行版而定)</span><br><span class="line">;; MacOSX: http:&#x2F;&#x2F;emacsformacosx.com&#x2F;emacs-builds&#x2F;Emacs-24.3-universal-10.6.8.dmg</span><br><span class="line">;; Windows: http:&#x2F;&#x2F;ftp.gnu.org&#x2F;gnu&#x2F;windows&#x2F;emacs&#x2F;emacs-24.3-bin-i386.zip</span><br><span class="line">;;</span><br><span class="line">;; 更多信息可以在这里找到:</span><br><span class="line">;; http:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;emacs&#x2F;#Obtaining</span><br><span class="line"></span><br><span class="line">;; 很重要的警告:</span><br><span class="line">;;</span><br><span class="line">;; 按照这个教程来学习并不会对你的电脑有任何损坏</span><br><span class="line">;; 除非你自己在学习的过程中愤怒地把它砸了</span><br><span class="line">;; 如果出现了这种情况，我不会承担任何责任</span><br><span class="line">;;</span><br><span class="line">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2018/09/17/Learn_elisp_in_Y_Minutes/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/17/Learn_elisp_in_Y_Minutes/" data-id="ckdif4l5g00088419e5g4g85j" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/elisp/" rel="tag">elisp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/emacs/" rel="tag">emacs</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-iPhone-Xs-Xs-Max-Xr-price" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/13/iPhone-Xs-Xs-Max-Xr-price/" class="article-date">
+  <time datetime="2018-09-13T09:47:13.000Z" itemprop="datePublished">2018-09-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Apple/">Apple</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/13/iPhone-Xs-Xs-Max-Xr-price/">iPhone Xs/Xs Max/Xr 价格对比</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <img src="/2018/09/13/iPhone-Xs-Xs-Max-Xr-price/iphone%E4%BB%B7%E6%A0%BC%E5%AF%B9%E6%AF%94.jpg" class="" title="2018秋季iPhone价格对比">
+        
+          <p class="article-more-link">
+            <a href="/2018/09/13/iPhone-Xs-Xs-Max-Xr-price/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/13/iPhone-Xs-Xs-Max-Xr-price/" data-id="ckdif4l5j000c84199x724y3o" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iphone/" rel="tag">iphone</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iphone-xs/" rel="tag">iphone xs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%94%AE%E4%BB%B7/" rel="tag">售价</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Emacs-shortcut-keys" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/10/Emacs-shortcut-keys/" class="article-date">
+  <time datetime="2018-09-10T10:31:18.000Z" itemprop="datePublished">2018-09-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Emacs/">Emacs</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/10/Emacs-shortcut-keys/">Emacs shortcut keys</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>基于自己常用的的快捷键，整理了这份list，不定期更新～</p>
+</blockquote>
+<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="** 基本命令"></a>** 基本命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">C-x C-f        打开&#x2F;新建文件</span><br><span class="line">C-x C-s        保存当前缓冲区</span><br><span class="line">C-x C-w        当前缓冲区另存为</span><br><span class="line">C-x i          光标处插入文本</span><br><span class="line">C-x b          切换buffer</span><br><span class="line">C-x C-b        显示buffer列表</span><br><span class="line">C-x k          关闭当前buffer</span><br><span class="line">C-x C-c        关闭emacs</span><br></pre></td></tr></table></figure>
+<h3 id="光标移动命令"><a href="#光标移动命令" class="headerlink" title="** 光标移动命令"></a>** 光标移动命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">C-f            前进一个字符</span><br><span class="line">C-b            后退一个字符</span><br><span class="line">C-p            上一行</span><br><span class="line">C-n            下一行</span><br><span class="line">C-a            光标移动到行首</span><br><span class="line">C-e            光标移动到行尾</span><br><span class="line"></span><br><span class="line">M-f            前进一个单词</span><br><span class="line">M-b            后退一个单词</span><br><span class="line">M-a            光标移动到句首</span><br><span class="line">M-e            光标移动到句尾</span><br><span class="line">M-&lt;            光标移动到全文开始</span><br><span class="line">M-&gt;            光标移动到全文结尾</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2018/09/10/Emacs-shortcut-keys/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/10/Emacs-shortcut-keys/" data-id="ckdif4l5b00058419h8c05rd9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/emacs/" rel="tag">emacs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shortcut/" rel="tag">shortcut</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" rel="tag">快捷键</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Happy-Teacher-s-Day-2018-09-10" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/10/Happy-Teacher-s-Day-2018-09-10/" class="article-date">
+  <time datetime="2018-09-10T09:38:25.000Z" itemprop="datePublished">2018-09-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%B6%A3%E9%97%BB/">趣闻</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/10/Happy-Teacher-s-Day-2018-09-10/">Happy Teacher&#39;s Day</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>From Wikipedia</p>
+</blockquote>
+<p>教师节广义上讲是一种感谢老师教导的节日，旨在肯定教师为教育事业所做的贡献与努力。不同国家和组织制定的“教师节”时间有所不同。</p>
+<h2 id="世界教师日"><a href="#世界教师日" class="headerlink" title="世界教师日"></a>世界教师日</h2><hr>
+<p>1966年10月5日联合国教科文组织与国际劳工组织联合主办了关于教师地位的政府间特别会议并通过了《关于教师地位的建议书》。</p>
+<p>1994年两组织共同作出决定，把每年的10月5日定为世界教师日。</p>
+<h2 id="各地教师节"><a href="#各地教师节" class="headerlink" title="各地教师节"></a>各地教师节</h2><hr>
+<h3 id="亚洲"><a href="#亚洲" class="headerlink" title="亚洲"></a>亚洲</h3><h4 id="中华民国"><a href="#中华民国" class="headerlink" title="中华民国"></a>中华民国</h4><p>现在，中华民国台湾于每年国历9月28日庆祝教师节，此日亦为古代鲁国教育先驱大成至圣先师孔子的诞辰。</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/09/10/Happy-Teacher-s-Day-2018-09-10/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/10/Happy-Teacher-s-Day-2018-09-10/" data-id="ckdif4l5c00068419amwqgdx6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/teacher-s-day/" rel="tag">teacher's day</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%B8%88%E8%8A%82/" rel="tag">教师节</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%B6%A3%E9%97%BB/" rel="tag">趣闻</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/02/hello-world/" class="article-date">
+  <time datetime="2018-05-02T02:43:56.415Z" itemprop="datePublished">2018-05-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/skills/">skills</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/02/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/02/hello-world/" data-id="ckdif4l5j000b8419dwtuglgp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Apple/">Apple</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Emacs/">Emacs</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/WEB/">WEB</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/skills/">skills</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%B6%A3%E9%97%BB/">趣闻</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%A1%B9%E7%9B%AE%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/">项目自动化部署</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jenkins/" rel="tag">Jenkins</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/busuanzi/" rel="tag">busuanzi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/elisp/" rel="tag">elisp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/emacs/" rel="tag">emacs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iphone/" rel="tag">iphone</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iphone-xs/" rel="tag">iphone xs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nexT/" rel="tag">nexT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shortcut/" rel="tag">shortcut</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/teacher-s-day/" rel="tag">teacher's day</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%94%AE%E4%BB%B7/" rel="tag">售价</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" rel="tag">快捷键</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E5%B8%88%E8%8A%82/" rel="tag">教师节</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%A3%E9%97%BB/" rel="tag">趣闻</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Jenkins/" style="font-size: 10px;">Jenkins</a> <a href="/tags/busuanzi/" style="font-size: 10px;">busuanzi</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/elisp/" style="font-size: 10px;">elisp</a> <a href="/tags/emacs/" style="font-size: 20px;">emacs</a> <a href="/tags/iphone/" style="font-size: 10px;">iphone</a> <a href="/tags/iphone-xs/" style="font-size: 10px;">iphone xs</a> <a href="/tags/nexT/" style="font-size: 10px;">nexT</a> <a href="/tags/shortcut/" style="font-size: 10px;">shortcut</a> <a href="/tags/teacher-s-day/" style="font-size: 10px;">teacher's day</a> <a href="/tags/%E5%94%AE%E4%BB%B7/" style="font-size: 10px;">售价</a> <a href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" style="font-size: 10px;">快捷键</a> <a href="/tags/%E6%95%99%E5%B8%88%E8%8A%82/" style="font-size: 10px;">教师节</a> <a href="/tags/%E8%B6%A3%E9%97%BB/" style="font-size: 10px;">趣闻</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/08/06/CSS-%E7%A6%81%E6%AD%A2%E9%80%89%E4%B8%AD%E6%96%87%E6%9C%AC/">CSS 禁止选中文本</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/08/Automated-Deployment-of-Projects-by-Jenkins/">基于 Jenkins 的自动化部署方案</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/01/fix-busuanzi-issue/">不蒜子问题总结</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/17/Learn_elisp_in_Y_Minutes/">【转载】X分钟速成Y</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/13/iPhone-Xs-Xs-Max-Xr-price/">iPhone Xs/Xs Max/Xr 价格对比</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Mojitoming<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
