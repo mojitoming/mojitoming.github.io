@@ -16,6 +16,7 @@
     "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
+    "hexo-theme-next": "^8.0.0-rc.5",
     "npm": "^6.14.7"
   }
 }
