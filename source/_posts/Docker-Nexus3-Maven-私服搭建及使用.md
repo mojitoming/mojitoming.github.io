@@ -41,9 +41,9 @@ $ docker run -id --net="host" --privileged=true --name=nexus3 \
 
    {% asset_img Untitled.png "This is an image." %}
 
-   {% asset_img Untitled 1.png "This is an image." %}
+   {% asset_img Untitled_1.png "This is an image." %}
 
-   {% asset_img Untitled 2.png "This is an image." %}
+   {% asset_img Untitled_2.png "This is an image." %}
 
    选择 File 类型，此处我定义 Blob Store 的名字为 example，路径为容器内的绝对路径，默认为`/nexus-data/blobs/example` ，此处不建议修改，因为映射到宿主机的路径为此路径。
 
@@ -53,17 +53,17 @@ $ docker run -id --net="host" --privileged=true --name=nexus3 \
 
    1. 创建 release 发布库
 
-      {% asset_img Untitled 3.png "This is an image." %}
+      {% asset_img Untitled_3.png "This is an image." %}
 
-      {% asset_img Untitled 4.png "This is an image." %}
+      {% asset_img Untitled_4.png "This is an image." %}
 
-      {% asset_img Untitled 5.png "This is an image." %}
+      {% asset_img Untitled_5.png "This is an image." %}
 
       最终创建名称为 example-releases 库，配置如上图所示。需要注意的是不要勾选 Strict Content Type Validation，如果勾选了，会影响拉取，我碰到的 error 是即使正确配置了用户名/密码，在拉取依赖时会一直报 401 unauthorized。
 
    2. 创建 snapshot 快照库
 
-      {% asset_img Untitled 6.png "This is an image." %}
+      {% asset_img Untitled_6.png "This is an image." %}
 
       最终创建名称为 example-snapshots 库，配置如上图所示。
 
@@ -71,9 +71,9 @@ $ docker run -id --net="host" --privileged=true --name=nexus3 \
 
    仓库组（Repository Group）的作用是将多个仓库（代理仓库和宿主仓库）聚合，对用户暴露统一的地址。当用户需要获取依赖时，请求的是仓库组的地址。
 
-   {% asset_img Untitled 7.png "This is an image." %}
+   {% asset_img Untitled_7.png "This is an image." %}
 
-   {% asset_img Untitled 8.png "This is an image." %}
+   {% asset_img Untitled_8.png "This is an image." %}
 
    最终创建名称为 example-public 库，配置如上图所示。
 
@@ -85,18 +85,18 @@ $ docker run -id --net="host" --privileged=true --name=nexus3 \
 
    在管理 UI 点击 copy 按钮获取 example-public 的 url，repository 的 id 与repository 的 name 对应。配置 profile 之后记住激活：`<activeProfile>example-public</activeProfile>`
 
-   {% asset_img Untitled 9.png "This is an image." %}
+   {% asset_img Untitled_9.png "This is an image." %}
 
    通过 servers 配置与 repository 对应的用户名/密码。其中 example-releases 和 example-snapshots 是用来 deploy 的，其 id 与 pom.xml 中的 id 相对应，这部分在下一小节会有详细说明。
 
-   {% asset_img Untitled 10.png "This is an image." %}
+   {% asset_img Untitled_10.png "This is an image." %}
 
 2. 项目中 pom.xml 配置
 
    id 必须与 setting.xml 文件中 server 的 id 相同。
 
-   {% asset_img Untitled 11.png "This is an image." %}
+   {% asset_img Untitled_11.png "This is an image." %}
 
 至此，可以使用 deploy 将自定义组件发布到 maven 私服，上传后可以在管理 UI 看到自己的组件。
 
-{% asset_img Untitled 12.png "This is an image." %}
+{% asset_img Untitled_12.png "This is an image." %}
