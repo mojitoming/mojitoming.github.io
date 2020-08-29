@@ -31,6 +31,8 @@ $ docker run -id --net="host" --privileged=true --name=nexus3 \
 
 第一次打开 WEB UI，默认的登录名是 admin，密码根据提示从容器中`/nexus-data`或 宿主`/usr/local/docker/nexus-data`目录下的对应文件获取；然后根据提示设置自己的密码。
 
+<!--more-->
+
 ## 3. Maven 私服搭建
 
 1. 创建 Blob Stores
